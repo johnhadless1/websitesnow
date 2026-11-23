@@ -3,8 +3,6 @@ simple JS snow simulator that snows all over your website.
 
 *made by snow lover for snow lovers*
 
-<img width="800" height="944" alt="snow" src="https://github.com/user-attachments/assets/4d379be1-03d8-4157-b1d2-785d971cde96" />
-
 ![snow](snow.gif)
 
 > [!NOTE]
