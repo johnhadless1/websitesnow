@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snow demo</title>
+<style>
+  :root {
+    --sky-top: #16243a;
+    --sky-bottom: #2b4561;
+    --card: #1f3249;
+    --ink: #e8eef5;
+    --muted: #9db0c4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 220vh;
+    font: 16px/1.5 Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    background: linear-gradient(var(--sky-top), var(--sky-bottom));
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 72px 20px 160px; }
+  h1 { font-size: 2.4rem; font-weight: 400; margin: 0 0 8px; }
+  p { color: var(--muted); max-width: 60ch; margin: 0 0 56px; }
+  .card {
+    background: var(--card);
+    padding: 24px;
+    margin-bottom: 96px;
+    border-radius: 2px;
+  }
+  .card h2 { margin: 0 0 6px; font-size: 1.15rem; font-weight: 400; }
+  .card p { margin: 0; }
+  .narrow { width: 60%; }
+  .right { margin-left: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Snow that stays</h1>
+  <p>Flakes settle on any element tagged with <code>data-snow</code>. A few drift straight through. Scroll down: the snow travels with the cards.</p>
+
+  <div class="card" data-snow>
+    <h2>Default card</h2>
+    <p>Lands, stacks up to 14px, about one flake in five falls through.</p>
+  </div>
+
+  <div class="card narrow" data-snow data-snow-max="30">
+    <h2>Deep snow</h2>
+    <p>data-snow-max="30"</p>
+  </div>
+
+  <div class="card narrow right" data-snow data-snow-pass="0.8">
+    <h2>Mostly ghostly</h2>
+    <p>data-snow-pass="0.8": most flakes pass through, so it piles slowly.</p>
+  </div>
+
+  <div class="card">
+    <h2>Untagged</h2>
+    <p>No data-snow, so snow falls right past.</p>
+  </div>
+</main>
+
+<script src="snow.js"></script>
+<script>
+  Snow.start({
+    // image: 'flake.svg',   // use your own SVG/PNG here
+  });
+</script>
+</body>
+</html>
