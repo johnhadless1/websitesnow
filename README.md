@@ -17,7 +17,7 @@ Apply this code to your webpage HTML file.
 ```
 <script src="snow.js"></script>
 <script>
-  Snow.start();   // or leave out image for a soft round dot
+  Snow.start();   // or Snow.start({ image: 'flake.svg' }); // if you'd like image of snow dots
 </script>
 ```
 
@@ -30,7 +30,7 @@ To have snow land on *specific parts* of your webpage such as card, div, buttons
 <div data-snow data-snow-max="30" data-snow-pass="0.5">...</div>
 ```
 
-Now you have snow landing on your sweet div and it stacks.
+Now you have snow landing on your sweet div and it *stacks*.
 
 > [!NOTE]
 > You can change configuration in snow.js to change on what you would like to what snow would act.
