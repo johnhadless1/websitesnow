@@ -7,6 +7,8 @@ simple JS snow simulator that snows all over your website.
 
 > [!NOTE]
 > This been made by Claude AI, making it pretty sloppy.
+>
+> And this repo is equipped with **WTFPL** license meaning you can do anything the fuck you want with it.
 
 ## How do I apply it?
 
